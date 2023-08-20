@@ -14,6 +14,9 @@ app = FastAPI()
 origins = ["*"]
 
 
+nltk.download('punkt')
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
